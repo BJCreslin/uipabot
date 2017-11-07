@@ -1,3 +1,3 @@
 # uipabot
 Simple bot for telegram  
-Dont forgot change telegram token
+Do not forget to change the telegram token
