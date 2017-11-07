@@ -36,6 +36,6 @@ public class UipaBot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         // Return bot token from BotFather
-        return "345936363:AAGsD8q4M3C8azCtqr4axZqJXjo-5S17T_k";
+        return "345936363:AAGsD8q4MaxZqJXjo-5S17T_k";
     }
 }
