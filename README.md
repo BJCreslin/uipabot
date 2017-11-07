@@ -1,2 +1,3 @@
 # uipabot
-Bot for Uipa
+Simple bot for telegram
+Dont forgot change telegram token
