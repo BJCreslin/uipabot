@@ -13,6 +13,9 @@ public class UipaBot extends TelegramLongPollingBot {
         if (update.hasMessage() && update.getMessage().hasText()) {
             // Set variables
             String message_text = update.getMessage().getText();
+            if (message_text.toLowerCase().equals("салам")) {
+                message_text = "салам попалам";
+            }
             long chat_id = update.getMessage().getChatId();
 
             SendMessage message = new SendMessage() // Create a message object object
@@ -27,15 +30,21 @@ public class UipaBot extends TelegramLongPollingBot {
     }
 
 
+    final static private String BotToken = "456915279:AAGoXpOfvd_uSa8pY-x0-wLBqM8EeW_jTX4";
+    final static private String BOTNAME = "BJCallBote";
+
+    public String getBOTNAME() {
+        return BOTNAME;
+    }
+    //    @Override
     public String getBotUsername() {
         // Return bot username
         // If bot username is @MyAmazingBot, it must return 'MyAmazingBot'
-        return "Uipabot";
+        // TODO
+        return BOTNAME;
     }
 
-    @Override
     public String getBotToken() {
-        // Return bot token from BotFather
-        return "345936363:AAGsD8q4MaxZqJXjo-5S17T_k";
+        return BotToken;
     }
 }
